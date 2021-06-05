@@ -8,5 +8,13 @@
 </head>
 <body>
     <h1>News {{id}}</h1>  
+
+    <!-- popular news section -->
+    <h3>popular news section</h3>
+    <ul>
+        {%for popular news in news%}
+            <li>{{popular_news.title}}</li>
+        {%endfor %}    
+    </ul>
 </body>
 </html>

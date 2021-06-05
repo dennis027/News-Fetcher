@@ -1,3 +1,4 @@
+from app.views import news
 import unittest
 from . import News
 News = news.News
