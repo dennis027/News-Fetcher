@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {%if title%}
-    <title>{{ title }}</title>
-    {%else%}
-    <title>Welcome to the best news review</title>
-    {%endif%}
+   {% if title %}
+     <title>{{title}}</title>
+   {% else %}
+     <title>News App</title>
+     {% endif %}
 </head>
 <body>
-    <h1>HOT NEWS</h1>
-    <h1>{{news}}</h1>
+    <h1>{{message}}</h1>
+    <h3>News sources</h3>
+    <ol>
+        {% for source in sources %}
+            <li><a href="/{{source.url}}">{{source.name}}</a></li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
