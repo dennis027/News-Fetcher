@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% import 'macros.html' as macro %} {% block content %}
+<div class="container">
+    <div style="background-color: whitesmoke; padding: 0;">
+        {{macro.displayNewsList(news)}}
+    </div>
+
+</div>
+
+
+{% endblock %}
