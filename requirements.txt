@@ -1,5 +1,5 @@
 click==8.0.1
-dataclasses==0.6
+dataclasses==0.8
 dominate==2.6.0
 Flask==2.0.1
 Flask-Bootstrap==3.3.7.1
@@ -8,7 +8,7 @@ Flask-SQLAlchemy==2.5.1
 Flask-WTF==0.15.1
 greenlet==1.1.0
 gunicorn==20.1.0
-importli-metadata==4.5.0
+importlib-metadata==4.5.0
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
