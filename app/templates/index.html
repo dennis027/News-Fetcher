@@ -12,17 +12,45 @@
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {% endblock %}
 {% block content %} 
+
+<br><br>
 <div class="container">
     <form>
         <input type="text" name="news_query" placeholder="Search for a News" class="form-control">
-        <input type="submit"  value="Submit" class="btn btn-primary">
+        <input type="submit"  value="Search" class="btn btn-primary">
     </form>
-
+  <div class="container">  
+    <h2>Hello welcome to Eagle NewsHub</h2>
+    <h3>This is a website that gives you the best news all over </h3>
+    <h3>Diffrent Categories available in our navigation bar gives you a better understang on the World today</h3>
     
 
+   <!-- <div class="container-fluid"> 
+   <h3>Popolar News</h3> 
+      <div class="row">
+        <div class col-md-4>i</div>
+        <div class col-md-4>i</div>
+        <div class col-md-4>i</div>
+      </div>
+    </div>  
+   -->
+  </div>  
 </div>
-
+<br><br><br><br><br><br><br><br>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+body{
+  background-image: url(https://imgr.search.brave.com/FAOJDjCiq5HOh14-oUMYJx-mEGcszpRkh3AH3bIvYvI/fit/1200/720/no/1/aHR0cHM6Ly9yZW1l/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMTkvMDQvbmV3/cy1ldmVudHMtYmFu/bmVyLmpwZw);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 30%;
+  font-family: 'Viaoda Libre', cursive;
+  font-size: xx-large;
+}
+h2,h3{
+  color: #fff;
+}
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -76,11 +104,12 @@
         border-radius: 0%;
         background-color: brown;
     }
+    .show{
+      display: none
+    }
 </style>
 
-   
-   
 
-</style> 
+
 
  {% endblock %}
