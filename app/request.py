@@ -138,17 +138,17 @@ def process_categories(categories_list):
     return news_categories_articles
 
 
-def search_news(news_name):
-    search_news_url = 'https://api.themoviedb.org/3/search/movie?api_key={}&query={}'.format(api_key,movie_name)
-    with urllib.request.urlopen(search_news_url) as url:
-        search_news_data = url.read()
-        search_news_response = json.loads(search_news_data)
+# def search_news(news_name):
+#     search_news_url = 'https://api.themoviedb.org/3/search/movie?api_key={}&query={}'.format(api_key,movie_name)
+#     with urllib.request.urlopen(search_news_url) as url:
+#         search_news_data = url.read()
+#         search_news_response = json.loads(search_news_data)
 
-        search_news_results = None
+#         search_news_results = None
 
-        if search_news_response['results']:
-            search_news_list = search_news_response['results']
-            search_news_results = process_resultsgit(search_news_list)
+#         if search_news_response['results']:
+#             search_news_list = search_news_response['results']
+#             search_news_results = process_results(search_news_list)
 
 
-    return search_news_results
+#     return search_news_results
