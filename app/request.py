@@ -148,7 +148,7 @@ def search_news(news_name):
 
         if search_news_response['results']:
             search_news_list = search_news_response['results']
-            search_news_results = process_results(search_news_list)
+            search_news_results = process_resultsgit(search_news_list)
 
 
     return search_news_results
